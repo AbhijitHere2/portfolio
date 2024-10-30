@@ -21,12 +21,12 @@ const Hero = () => {
         and best practices
       </p>
       <div className="space-x-5 flex">
-        <button className="heroConnect border-2 border-transparent rounded-full py-1 px-4 mx-2 hover:border-white">
+        <button className="heroConnect  border-2  border-black rounded-full py-1 px-4 mx-2 hover:border-white">
           <AnchorLink className="connect" offset={50} href="#contact">
             Connect With Me
           </AnchorLink>
         </button>
-        <button className="border-2 rounded-3xl py-1 px-4 hover:border-purple-700">
+        <button className="border-2 rounded-3xl py-1 px-4 hover:border-purple-700 ">
           {" "}
           Download Resume
         </button>

@@ -8,6 +8,12 @@
 
 }
 .heroConnect{
-  background: linear-gradient(264deg,#DA7C25 10% , #B923E1 98.06%);
+  background: linear-gradient(264deg,#DA7C25 11% , #B923E1 98.06%);
  
+
 }
+/* .heroConnect:hover{
+
+  border: 2px solid white;
+ 
+} */

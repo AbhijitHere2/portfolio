@@ -11,9 +11,9 @@ const About = () => {
         <img className="w-32   " src={Ablogo} alt="" />
       </div>
       <div className="about-section mt-10 gap-5 flex max-lg:flex-col lg:ms-16">
-        <div className="about-left flex justify-center">
+        {/* <div className="about-left flex justify-center">
           <img src={Ababhi} className="  h-[50%]  max-lg:w-[50%] mt-10  " alt="" />
-        </div>
+        </div> */}
         <div className="about-right p-5">
           <div className="about-para text-lg ">
             <p>
@@ -41,12 +41,12 @@ const About = () => {
             <br />
             <br />
           </div>
-          <div className="flex-col  space-y-5 ml-10 ">
+          <div className="flex-col  space-y-5  justify-center items-center">
             <div className="about-skill">
               <p>HTML & CSS</p>
               <hr style={{ width: "58%" }} />
             </div>
-            <div className="about-skill">
+            <div className="about-skill  ">
               <p> Javascript</p>
               <hr style={{ width: "55%" }} />
             </div>
