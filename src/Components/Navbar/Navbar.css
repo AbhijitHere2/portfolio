@@ -1,0 +1,26 @@
+.connect{
+ transition: 0.5s;
+  background: linear-gradient(267deg,#DA7C25 0.36% , #B923E1 102.06%) ;
+}
+.connect:hover {
+transform: scale(1.05);
+}
+.nav-menu li image {
+  display: flex;
+  margin: auto;
+
+}
+@media( max-width:450px){
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 14rem;
+    background-color: #1f0016;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+  }
+
+}

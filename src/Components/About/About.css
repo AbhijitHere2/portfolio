@@ -1,0 +1,22 @@
+.about-skill{
+ display: flex;
+ align-items: center;
+ gap: 30px; 
+ transition: 0.3s;
+}
+.about-skill p{
+  width: 100px;
+  font-size: large;
+  font-weight: 500;
+}
+.about-skill hr{
+  outline: none;
+  border: none;
+  height: 8px;
+  width: 50%;
+  border-radius: 50px;
+  background: linear-gradient(264deg,#df8908 -5.09% , #b415ff 106.28%);
+}
+.about-skill:hover{
+  transform: scale(1.05);
+}

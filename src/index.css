@@ -1,0 +1,20 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: "MyCustomFont";
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/font/coolvetica-rg.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

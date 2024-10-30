@@ -1,0 +1,13 @@
+.AbhiName{
+  background: linear-gradient(267deg,#DA7C25 0.36% , #B923E1 102.06%);
+
+  background-clip:text  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+.heroConnect{
+  background: linear-gradient(264deg,#DA7C25 10% , #B923E1 98.06%);
+ 
+}
