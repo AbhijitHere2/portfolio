@@ -11,19 +11,20 @@ const MyWork = () => {
         <h1 className="text-5xl  absolute bottom-0 ">My Latest Work</h1>
         <img className="   " src={Ablogo} alt="" />
       </div>
-      <div className="MyWorkCont flex flex-wrap  justify-center items-center gap-10 mt-16 ">
+      <div className="MyWorkCont flex  flex-wrap justify-evenly items-center gap-10 mt-16 ">
         {mywork_data.map((work, index) => {
           return (
             <img
-              className=" box-border cursor-pointer "
+              className=" box-border cursor-pointer  "
               key={index}
               src={work.w_img}
               alt=""
+              onClick={work.W_page}
             />
           );
         })}
       </div>
-      <div className=" flex justify-center items-center  my-8  ">
+      <div className=" flex justify-center items-center   my-14  ">
         <div className="flex justify-center items-center cursor-pointer px-10 py-3 rounded-full gap-2 w-fit border-2  hover:gap-5  duration-300 transition-all">
           <p>Show More</p>
           <img className="w-4 " src={arrow_icon} alt="" />

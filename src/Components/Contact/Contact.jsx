@@ -17,9 +17,8 @@ const Contact = () => {
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData,
+      body: json
     }).then((res) => res.json());
-
     if (res.success) {
       console.log("Success", res);
       alert(res.message);
@@ -37,14 +36,14 @@ const Contact = () => {
         <img className="   " src={Ablogo} alt="" />
       </div>
       <div className=" flex items-center justify-evenly gap-16 mt-14 px-16 max-sm:px-0 max-lg:flex-col">
-        <div className="contact-left ">
+        <div className="contact-left  ">
           <h1 className="Abhi-contact text-5xl"> Let's talk</h1>
-          <p className="text-[#d8d8d8] text-lg">
+          <p className="text-[#d8d8d8] text-lg robo">
             i'm currently available to take on new projects, so feel free to
             send me a message about anything that you want me to work on. You
             can contact me anytime
           </p>
-          <div className=" contact-details mt-5 text-[#d8d8d8]">
+          <div className=" contact-details mt-5 robo text-[rgb(216,216,216)]">
             <div className="contact-detail">
               <img src={mail_icon} alt="" className="w-6" />
               <p>GaikwadAbhijit667@gmail.com</p>
@@ -67,6 +66,7 @@ const Contact = () => {
               name="name"
               id="name"
               placeholder="Enter Your Name"
+              required
             />
             <label htmlFor="mail">Your Email</label>
             <input
@@ -74,6 +74,7 @@ const Contact = () => {
               name="email"
               id="mail"
               placeholder="Enter Your Email"
+              required
             />
             <label htmlFor="Message">Write your massage here</label>
             <textarea
@@ -81,6 +82,7 @@ const Contact = () => {
               rows={8}
               id="Message"
               placeholder="Enter Your Message"
+              required
             ></textarea>
 
             <button type="submit">Submit Now</button>

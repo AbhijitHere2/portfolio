@@ -11,12 +11,18 @@ body{
   background: #161513;
   color: white;
   font-family: "MyCustomFont";
-  
+   /* font-family: 'robotoFont'; */
 
 }
 @font-face {
   font-family: 'MyCustomFont';
   src: url('./assets/font/coolvetica-rg.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoFont';
+  src: url('./assets\font\roboto\Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

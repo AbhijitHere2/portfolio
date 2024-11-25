@@ -15,7 +15,7 @@ const About = () => {
           <img src={Ababhi} className="  h-[50%]  max-lg:w-[50%] mt-10  " alt="" />
         </div> */}
         <div className="about-right p-5">
-          <div className="about-para text-lg ">
+          <div className="about-para text-lg robo ">
             <p>
               “Hi, I'm Abhijit Gaikwad , a passionate front-end developer with a
               love for creating visually appealing and user-friendly websites.
@@ -23,7 +23,7 @@ const About = () => {
               websites work behind the scenes, which quickly turned into a
               passion for creating beautiful, user-friendly designs. Since then,
               I've been hooked on the magic of coding and transforming creative
-              ideas into seamless digital experiences. ”{" "}
+              ideas into seamless digital experiences. ”
             </p>
 
             <p>
