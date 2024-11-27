@@ -5,27 +5,39 @@ import mail_icon from "../../assets/mail_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 
+import Swal from 'sweetalert2'
+
 const Contact = () => {
+ 
+  const [result, setResult] = React.useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    setResult("Sending....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "164158ec-bdac-4049-b978-dafdfa27f66f");
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: json
-    }).then((res) => res.json());
-    if (res.success) {
-      console.log("Success", res);
-      alert(res.message);
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent Successfully! ",
+        icon: "success"
+      });
       event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
     }
   };
-  return (
+   return (
     <div
       onSubmit={onSubmit}
       id="contact"

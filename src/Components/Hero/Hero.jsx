@@ -1,7 +1,8 @@
 import React from "react";
 import "./Hero.css";
-import abhi from "../../assets/abhi.jpg";
+import abhi from "../../assets/abhi pic.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import resume from '../../assets/abhiit resume.pdf'
 
 const Hero = () => {
   return (
@@ -28,9 +29,8 @@ const Hero = () => {
             Connect With Me
           </AnchorLink>
         </button>
-        <button className="border-2 rounded-3xl py-1 px-4 hover:border-purple-700 ">
-          {" "}
-          Download Resume
+        <button  className="border-2 rounded-3xl py-1 px-4 hover:border-purple-700 ">
+        <a href={resume} download='resume'>  Download Resume</a>
         </button>
       </div>
     </div>
