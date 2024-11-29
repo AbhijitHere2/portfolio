@@ -12,11 +12,11 @@ const Hero = () => {
     gap-8 text-center "
     >
       <img className="w-64 rounded-full" src={abhi} alt="" />
-      <h1 className="text-4xl head w-[50%] text-center">
+      <h1 className="text-4xl head w-[50%] max-lg:w-[90%] text-center">
         <span className="AbhiName">I'm Abhijit Gaikwad , </span>Frontend
         Developer based in India
       </h1>
-      <p className="w-[45%] robo ">
+      <p className="w-[45%] max-lg:w-[70%]  robo ">
         Front-End Developer passionate about crafting responsive, user-friendly
         websites. Bringing web designs to life with cutting-edge technologies
         and best practices

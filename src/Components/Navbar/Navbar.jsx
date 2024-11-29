@@ -8,7 +8,7 @@ import menu_close from "../../assets/menu_close.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toggle = () => {
     setOpen(!open);
     console.log("opm");
@@ -32,9 +32,7 @@ const Navbar = () => {
         alt=""
       />
       <ul
-        className={` nav-menu flex justify-center items-center gap-10 ${
-          open ? "hidden" : "block"
-        }    `}
+        className={` flex justify-center items-center gap-10 max-sm:hidden  `}
       >
         <li>
           <AnchorLink className="achor-link" href="#home">
@@ -72,6 +70,39 @@ const Navbar = () => {
             Connect With Me
           </AnchorLink>
         </button>
+
+        {/* mobbile menu  */}
+        <ul
+        className={` nav-menu flex justify-center items-center md:hidden gap-10 ${
+          open ? "hidden" : "block"
+        }    `}
+      >
+        <li>
+          <AnchorLink className="achor-link" href="#home">
+            <p onClick={() => setMenu("home")}>Home</p>
+          </AnchorLink>
+          {menu === "home" ? <img src={underline} alt="" /> : <></>}
+        </li>
+        <li>
+          <AnchorLink className="achor-link" offset={50} href="#about">
+            <p onClick={() => setMenu("about")}>About Me</p>
+          </AnchorLink>
+          {menu === "about" ? <img src={underline} alt="" /> : <></>}
+        </li>
+
+        <li>
+          <AnchorLink className="achor-link" offset={50} href="#work">
+            <p onClick={() => setMenu("work")}>Portfolio</p>
+          </AnchorLink>
+          {menu === "work" ? <img src={underline} alt="" /> : <></>}
+        </li>
+        <li>
+          <AnchorLink className="achor-link" offset={50} href="#contact">
+            <p onClick={() => setMenu("contact")}>Contact</p>
+          </AnchorLink>
+          {menu === "contact" ? <img src={underline} alt="" /> : <></>}
+        </li>
+      </ul>
       </div>
     </div>
   );

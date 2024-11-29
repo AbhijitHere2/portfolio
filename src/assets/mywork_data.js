@@ -9,7 +9,7 @@ const mywork_data = [
         w_name:"Web design",
         w_img:project1_img,
         W_page :()=>{
-            window.open("https://hubnex-final-6rms.vercel.app/","_blank")
+            window.location=("https://hubnex-final-6rms.vercel.app/")
         }
     },
     {
